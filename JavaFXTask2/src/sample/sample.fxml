@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="350.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+   <children>
+      <TableView fx:id="tblData" layoutX="14.0" layoutY="14.0" prefHeight="321.0" prefWidth="270.0">
+        <columns>
+          <TableColumn fx:id="colK" editable="false" prefWidth="133.0" sortable="false" text="K(i)" />
+          <TableColumn fx:id="colY" editable="false" prefWidth="133.0" sortable="false" text="Y(i)" />
+        </columns>
+      </TableView>
+      <TextField fx:id="editA" layoutX="343.0" layoutY="135.0" prefHeight="25.0" prefWidth="164.0" />
+      <TextField fx:id="editB" layoutX="343.0" layoutY="187.0" prefHeight="25.0" prefWidth="164.0" />
+      <Label layoutX="308.0" layoutY="135.0" text="a =" />
+      <Label layoutX="308.0" layoutY="191.0" text="b =" />
+      <Button fx:id="btnFillRandom" layoutX="308.0" layoutY="237.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="201.0" text="Заполнить случайными числами" />
+      <Button fx:id="btnRun" layoutX="308.0" layoutY="292.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="201.0" text="Выполнить задание" />
+      <Button fx:id="btnClear" layoutX="687.0" layoutY="237.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="98.0" text="Очистка" />
+      <Button fx:id="btnExit" layoutX="687.0" layoutY="292.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="98.0" text="Выход" />
+      <ImageView fitHeight="139.0" fitWidth="475.0" layoutX="308.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@formula.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="532.0" layoutY="118.0" prefHeight="99.0" prefWidth="253.0" style="-fx-border-color: black; -fx-border-width: 2;" text="Данный пример имеет решение &#10;при условии что:&#10;  1. K, a, b одновременно не равны 0&#10;  2. a и b одновременно не равны 0 " textAlignment="CENTER">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <Label contentDisplay="CENTER" layoutX="532.0" layoutY="264.0" prefHeight="40.0" prefWidth="136.0" text="МОЖНО ВВОДИТЬ &#10;ТОЛЬКО ЧИСЛА!" textAlignment="CENTER" />
+   </children>
+</AnchorPane>
